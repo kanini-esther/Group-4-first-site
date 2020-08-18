@@ -12,10 +12,10 @@ body{
 }
 /*Start of navigation bar*/
 header{
-	background-color: #222;
+	background-color: #fff;
 	font-color: white;
-	position: fixed;
-	z-index: 10px;
+	position: relative;
+	z-index: 1000;
 
 }
 
@@ -225,5 +225,4 @@ img{
 
 }
 
-/*end of image slider
-*/
+/*end of image slider*/

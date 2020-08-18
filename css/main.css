@@ -14,7 +14,7 @@ body{
 header{
 	background-color: #222;
 	font-color: white;
-	position: relative;
+	position: fixed;
 	z-index: 10px;
 
 }
@@ -65,13 +65,13 @@ img{
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	animation: zoom-out 3s linear infinite
+	animation: zoom-out 3s linear infinite;
 
 }
-/*@keyframes zoom-out{
+@keyframes zoom-out{
 	100%{
 		width: 100%;
-	}*/
+	}
 
 }
 
@@ -82,8 +82,8 @@ img{
 	left: 100px;
 	color: #fff; 
 	animation: textup 12s linear infinite;
-/*	transform: translateY(100px);
-*/}
+	transform: translateY(100px);
+}
 .text-box h1{
 	margin-bottom: 40px;
 }
@@ -215,7 +215,7 @@ img{
 		visibility: visible;
 	}
 }
-/*@keyframes textup{
+@keyframes textup{
 	10%{
 		transform: translateY(0px);
 	}
@@ -223,7 +223,7 @@ img{
 		transform: translateY(0px);
 	}
 
-}*/
+}
 
-
-
+/*end of image slider
+*/

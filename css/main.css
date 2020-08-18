@@ -14,6 +14,8 @@ body{
 header{
 	background-color: #222;
 	font-color: white;
+	position: relative;
+	z-index: 10px;
 
 }
 
@@ -48,32 +50,180 @@ header nav ul{
 /*end of navigation bar*/
 
 /*start of picture slides*/
-.banner1{
+.banner1,.banner2,.banner3,.banner4,.banner5{
 	padding-top: 10px;
 	height:100vh;
 	width: 100%;
-	position: relative;
+	position: fixed;
 	left: 0;
 	top: 0;
 }
 img{
-	height: 990px;
+	/*height: 990px;*/
 	width:100%;
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
+	animation: zoom-out 3s linear infinite
 
 }
-/*.banner1 img{
-	padding-top: 10px;
-	height: 650px;
-	width: 650px;
-}*/
+/*@keyframes zoom-out{
+	100%{
+		width: 100%;
+	}*/
+
+}
+
 .text-box{
 	width: 600PX;
 	position:absolute;
 	top: 200px;
 	left: 100px;
 	color: #fff; 
+	animation: textup 12s linear infinite;
+/*	transform: translateY(100px);
+*/}
+.text-box h1{
+	margin-bottom: 40px;
 }
+.text-box p{
+	font-size: 20px;
+	line-height: 18px;
+	margin-top: 80px;
+}
+.text-box span{
+	background-color: red;
+	height: 1px;
+	width: 100px;
+	position: absolute;
+	left: 0;
+
+}
+.banner1{
+	animation: slide1 12s linear infinite;
+}
+.banner2{
+	animation: slide2 12s linear infinite;
+}
+.banner3{
+	animation: slide3 12s linear infinite;
+}
+.banner4{
+	animation: slide4 12s linear infinite;
+}
+.banner5{
+	animation: slide5 12s linear infinite;
+}
+@keyframes slide1{
+	0%{
+		visibility: visible;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: hidden;
+	}
+	125%{
+		visibility: visible;
+	}
+}
+@keyframes slide2{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: visible;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: hidden;
+	}
+	125%{
+		visibility: hidden;
+	}
+}
+@keyframes slide3{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: visible;
+	}
+	100%{
+		visibility: hidden;
+	}
+	125%{
+		visibility: hidden;
+	}
+}
+@keyframes slide4{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+	125%{
+		visibility: hidden;
+	}
+}
+@keyframes slide5{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: hidden;
+	}
+	125%{
+		visibility: visible;
+	}
+}
+/*@keyframes textup{
+	10%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+
+}*/
+
+
+
